@@ -4,9 +4,9 @@ Collaboration is key to this project. Legal templates are complex legal document
 
 ### Discussion
 
-The [codeforcroatia/legal.imamopravoznati.org](https://github.com/codeforcroatia/legal.imamopravoznati.org) repository on GitHub is where the legal templates are stored.
+The [codeforcroatia/legal-boilerplate](https://github.com/codeforcroatia/legal-boilerplate) repository on GitHub is where the legal templates are stored.
 
-It is a public repo so anyone can participate in the discussion by creating and commenting on [issues](https://github.com/codeforcroatia/legal.imamopravoznati.org/issues).
+It is a public repo so anyone can participate in the discussion by creating and commenting on [issues](https://github.com/codeforcroatia/legal-boilerplate/issues).
 
 ### Workflow
 
