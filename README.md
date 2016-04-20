@@ -4,7 +4,7 @@
 
 This is a service to browse and customise the growing collection of legal templates for FOI appeals in Croatia.
 
-<http://boilerplate.codeforcroatia.org.org>
+<http://boilerplate.codeforcroatia.org>
 
 ## FAQ
 
