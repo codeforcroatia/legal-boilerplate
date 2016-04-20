@@ -1,0 +1,27 @@
+<footer>
+  <article>
+    <section>
+      <h2>O {{ site.owner.naziv }}</h2>
+      <p>Mi smo građani, dizajneri, developeri i mladi poduzetnici koji grade bolje mjesto za živjeti kroz smislenu primjenu tehnologije.</p>
+      <p>Saznajte više na <a href="{{ site.owner.website }}">našoj stranici</a>.</p>
+      <p>
+        <a href="{{ site.owner.facebook }}" class="social facebook">{{ site.owner.naziv }} na Facebooku</a>
+        <a href="{{ site.owner.github }}" class="social github">{{ site.owner.naziv }} na GitHubu</a>
+      </p>
+    </section>
+    <section>
+      <h2>O {{ site.project.name }}</h2>
+      <p>Ova usluga posvećena je svima pod jednakim uvjetima, besplatno. <a href="{{ site.url }}">{{ site.project.naziv }}</a> sadrži besplatne pravne predloške otvorenog koda. Njihov cilj je olakšati ispunjavanje obrazaca.</p>
+      <p>S ljubavlju održavaju geekovi iz {{ site.owner.naziv }}</p>
+    </section>
+    <section>
+      <h2>Minuti&aelig;</h2>
+      <ul>
+        <li><a href="{{ site.owner.github }}/{{ site.project.repository }}/blob/gh-pages/CONTRIBUTING.md">Kako možete pomoći</a></li>
+        <li><a href="{{ site.owner.github }}/{{ site.project.repository }}/blob/gh-pages/LICENSE.md">Copyright imenovanja</a></li>
+        <li><a href="#">Politika privatnosti</a></li>
+        <li><a href="#">Uvjeti korištenja</a></li>
+      </ul>
+    </section>
+  </article>
+</footer>

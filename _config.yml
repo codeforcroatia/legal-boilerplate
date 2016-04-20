@@ -1,0 +1,35 @@
+safe: true
+lsi: false
+pygments: true
+source: .
+permalink: /:title/
+baseurl: "/"
+url: http://boilerplate.codeforcroatia.org
+exclude:
+- ".*"
+- "*.md"
+- "Gemfile*"
+- "CNAME"
+
+owner:
+  name: Code for Croatia
+  naziv: Programiraj za Hrvatsku
+  contact: mailto:hi@codeforcroatia.org
+  website: http://codeforcroatia.org
+  github: https://github.com/codeforcroatia
+  facebook: https://www.facebook.com/kodirajzahrvatsku
+  
+project:
+  name: Legal Boilerplate
+  naziv: Pravni predlošci
+  website: http://boilerplate.codeforcroatia.org
+  repository: legal-boilerplate
+
+license:
+  name: CC0
+  url: https://creativecommons.org/publicdomain/zero/1.0/deed.hr
+
+analytics:
+  provider: google
+  google:
+    id: UA-46708458-12

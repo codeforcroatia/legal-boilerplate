@@ -1,0 +1,98 @@
+/* Site structure
+ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+html {
+  font-size: 1px; /* rem == px */
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body > section {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+body > section > * {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+body > section > article {
+  -webkit-flex: auto;
+  flex: auto;
+  min-height: 300px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+body > section > article > header > h1 {
+  margin: 20px 0 0 0;
+}
+body > section > article > * {
+  -webkit-flex: none;
+  flex: none;
+}
+
+@media (max-width: 768px) {
+  body > section > article {
+    max-width: 100%;
+  }
+  body > section {
+    background-image: none !important;
+  }
+}
+
+@media print {
+  html {
+    font-size: 0.75px;
+  }
+  html,
+  body {
+    height: auto;
+    width: auto;
+  }
+  body > section,
+  body > section > article {
+    display: block !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    width: auto !important;
+    min-width: none !important;
+    max-width: none !important;
+
+    height: auto !important;
+    min-height: auto !important;
+    max-height: auto !important;
+  }
+}
+
+@page {
+  size: portrait;
+  margin: 2cm;
+  border-radius: 10px; /* No more paper cuts */
+}
