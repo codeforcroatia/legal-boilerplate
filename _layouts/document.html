@@ -26,12 +26,12 @@ layout: menu
     </div>
     <div class="controls">
       <button class="action print" disabled>Print</button>
-      <button class="action pdf" enabled>Save as PDF</button>
     </div>
   </header>
   <article>
     {{content}}
   </article>
+  <p align="right"><a href="{{ site.owner.github }}/{{ site.project.repository }}/edit/gh-pages/{{ page.path }}">Uredi ovu stranicu</a></p>
   <script src="{{ site.baseurl }}scripts/dom.js"></script>
   <script src="{{ site.baseurl }}scripts/print.js" async></script>
   <script src="{{ site.baseurl }}scripts/definitions.js" async></script>
