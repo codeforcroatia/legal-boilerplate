@@ -21,6 +21,9 @@ layout: menu
           <time datetime="{{ page.date | date_to_xmlschema }}">
             {{ page.date | date_to_long_string }}
           </time>
+        </a> 
+        <a href="{{ site.owner.github }}/{{ site.project.repository }}/edit/gh-pages/{{ page.path }}">
+          (uredi)
         </a>
       </p>
     </div>
@@ -31,9 +34,6 @@ layout: menu
   <article>
     {{content}}
   </article>
-  <div class="meta">
-    <p align="right"><a href="{{ site.owner.github }}/{{ site.project.repository }}/edit/gh-pages/{{ page.path }}">Uredi ovu stranicu</a></p>
-  </div>
   <script src="{{ site.baseurl }}scripts/dom.js"></script>
   <script src="{{ site.baseurl }}scripts/print.js" async></script>
   <script src="{{ site.baseurl }}scripts/definitions.js" async></script>
