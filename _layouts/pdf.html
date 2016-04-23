@@ -1,0 +1,39 @@
+---
+layout: menu
+---
+<section id="document">
+  <header>
+    <div class="meta">
+      <h1>{{ page.title }}</h1>
+      <p class="license">{{ page.description }}</p>
+      <ul class="authors">
+        {% for author in page.authors %}
+        <li>Autor: <a href="{{ author.contact }}">{{ author.name }}</a></li>
+        {% endfor %}
+      </ul>
+      <p class="license">
+        Dozvola:
+        <a href="{{ page.license.url }}">{{ page.license.name }}</a>
+      </p>
+      <p class="date">
+        Objavljeno:
+        <a href="{{ site.owner.github }}/{{ site.project.repository }}/commits/gh-pages/{{ page.path }}">
+          <time datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date_to_long_string }}
+          </time>
+        </a>
+      </p>
+    </div>
+    <div class="controls">
+      <button class="action pdf" disabled>Print</button>
+    </div>
+  </header>
+  <article>
+    {{content}}
+  </article>
+  <script src="{{ site.baseurl }}scripts/dom.js"></script>
+  <script src="{{ site.baseurl }}scripts/print.js" async></script>
+  <script src="{{ site.baseurl }}scripts/definitions.js" async></script>
+  <script src="{{ site.baseurl }}scripts/editor.js" async></script>
+  <script src="{{ site.baseurl }}scripts/input.js" async></script>
+</section>
